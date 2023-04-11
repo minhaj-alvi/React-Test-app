@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import { Box, Checkbox, Grid, Typography } from "@mui/material";
+import { intentionStyles } from "@/styles/home-styles/intentions/intentions-styles";
 
 const Intentions = () => {
   const [checked, setChecked] = useState({
@@ -16,6 +17,8 @@ const Intentions = () => {
     setChecked({ ...checked, [name]: event.target.checked });
   };
 
+  const classes = intentionStyles();
+
   return (
     <>
       <Grid
@@ -26,47 +29,19 @@ const Intentions = () => {
       >
         <Grid item xs={10}></Grid>
         <Grid sx={{ ml: "8rem" }} item xs={4}>
-          <Typography
-            sx={{
-              fontWeight: "700",
-              fontSize: "32px",
-              color: "#323232",
-              textAlign: "center",
-            }}
-          >
-            Intention
-          </Typography>
+          <Typography className={classes.heading}>Intention</Typography>
           <Box sx={{ mt: "1rem" }}>
-            <Typography
-              sx={{
-                fontWeight: "700",
-                fontSize: "16px",
-                color: "#323232",
-              }}
-            >
+            <Typography className={classes.subHeading}>
               What are your preferences?
             </Typography>
             <Box
-              sx={{
-                width: "320px",
-                height: "55px",
-                mt: "0.5rem",
-                border: checked.checkbox1
-                  ? "1px solid #01E994"
-                  : "1px solid #D0D5DD",
-                boxShadow: "none",
-                borderRadius: "30px",
-                display: "flex",
-                alignItems: "center",
-              }}
+              className={
+                checked.checkbox1
+                  ? classes.checkboxContainerChecked
+                  : classes.checkboxContainerUnChecked
+              }
             >
-              <Box
-                sx={{
-                  display: "flex",
-                  alignItems: "center",
-                  paddingLeft: "1rem",
-                }}
-              >
+              <Box className={classes.checkbox}>
                 <Checkbox
                   checked={checked.checkbox1}
                   onChange={handleChange("checkbox1")}
@@ -76,39 +51,19 @@ const Intentions = () => {
                     },
                   }}
                 />
-                <Typography
-                  sx={{
-                    fontWeight: "400",
-                    fontSize: "16px",
-                    color: "#323232",
-                    textAlign: "center",
-                  }}
-                >
+                <Typography className={classes.checkboxText}>
                   Heizkosten sparen
                 </Typography>
               </Box>
             </Box>
             <Box
-              sx={{
-                width: "320px",
-                height: "55px",
-                mt: "0.5rem",
-                border: checked.checkbox2
-                  ? "1px solid #01E994"
-                  : "1px solid #D0D5DD",
-                boxShadow: "none",
-                borderRadius: "30px",
-                display: "flex",
-                alignItems: "center",
-              }}
+              className={
+                checked.checkbox2
+                  ? classes.checkboxContainerChecked
+                  : classes.checkboxContainerUnChecked
+              }
             >
-              <Box
-                sx={{
-                  display: "flex",
-                  alignItems: "center",
-                  paddingLeft: "1rem",
-                }}
-              >
+              <Box className={classes.checkbox}>
                 <Checkbox
                   checked={checked.checkbox2}
                   onChange={handleChange("checkbox2")}
@@ -118,39 +73,19 @@ const Intentions = () => {
                     },
                   }}
                 />
-                <Typography
-                  sx={{
-                    fontWeight: "400",
-                    fontSize: "16px",
-                    color: "#323232",
-                    textAlign: "center",
-                  }}
-                >
+                <Typography className={classes.checkboxText}>
                   Stromkosten sparen
                 </Typography>
               </Box>
             </Box>
             <Box
-              sx={{
-                width: "320px",
-                height: "55px",
-                mt: "0.5rem",
-                border: checked.checkbox3
-                  ? "1px solid #01E994"
-                  : "1px solid #D0D5DD",
-                boxShadow: "none",
-                borderRadius: "30px",
-                display: "flex",
-                alignItems: "center",
-              }}
+              className={
+                checked.checkbox3
+                  ? classes.checkboxContainerChecked
+                  : classes.checkboxContainerUnChecked
+              }
             >
-              <Box
-                sx={{
-                  display: "flex",
-                  alignItems: "center",
-                  paddingLeft: "1rem",
-                }}
-              >
+              <Box className={classes.checkbox}>
                 <Checkbox
                   checked={checked.checkbox3}
                   onChange={handleChange("checkbox3")}
@@ -160,39 +95,19 @@ const Intentions = () => {
                     },
                   }}
                 />
-                <Typography
-                  sx={{
-                    fontWeight: "400",
-                    fontSize: "16px",
-                    color: "#323232",
-                    textAlign: "center",
-                  }}
-                >
+                <Typography className={classes.checkboxText}>
                   Wohnkomfort steigern
                 </Typography>
               </Box>
             </Box>{" "}
             <Box
-              sx={{
-                width: "320px",
-                height: "55px",
-                mt: "0.5rem",
-                border: checked.checkbox4
-                  ? "1px solid #01E994"
-                  : "1px solid #D0D5DD",
-                boxShadow: "none",
-                borderRadius: "30px",
-                display: "flex",
-                alignItems: "center",
-              }}
+              className={
+                checked.checkbox4
+                  ? classes.checkboxContainerChecked
+                  : classes.checkboxContainerUnChecked
+              }
             >
-              <Box
-                sx={{
-                  display: "flex",
-                  alignItems: "center",
-                  paddingLeft: "1rem",
-                }}
-              >
+              <Box className={classes.checkbox}>
                 <Checkbox
                   checked={checked.checkbox4}
                   onChange={handleChange("checkbox4")}
@@ -202,39 +117,19 @@ const Intentions = () => {
                     },
                   }}
                 />
-                <Typography
-                  sx={{
-                    fontWeight: "400",
-                    fontSize: "16px",
-                    color: "#323232",
-                    textAlign: "center",
-                  }}
-                >
+                <Typography className={classes.checkboxText}>
                   Mehr Sicherheit
                 </Typography>
               </Box>
             </Box>{" "}
             <Box
-              sx={{
-                width: "320px",
-                height: "55px",
-                mt: "0.5rem",
-                border: checked.checkbox5
-                  ? "1px solid #01E994"
-                  : "1px solid #D0D5DD",
-                boxShadow: "none",
-                borderRadius: "30px",
-                display: "flex",
-                alignItems: "center",
-              }}
+              className={
+                checked.checkbox5
+                  ? classes.checkboxContainerChecked
+                  : classes.checkboxContainerUnChecked
+              }
             >
-              <Box
-                sx={{
-                  display: "flex",
-                  alignItems: "center",
-                  paddingLeft: "1rem",
-                }}
-              >
+              <Box className={classes.checkbox}>
                 <Checkbox
                   checked={checked.checkbox5}
                   onChange={handleChange("checkbox5")}
@@ -244,39 +139,19 @@ const Intentions = () => {
                     },
                   }}
                 />
-                <Typography
-                  sx={{
-                    fontWeight: "400",
-                    fontSize: "16px",
-                    color: "#323232",
-                    textAlign: "center",
-                  }}
-                >
+                <Typography className={classes.checkboxText}>
                   Wertsteigerung der Immobilie
                 </Typography>
               </Box>
             </Box>{" "}
             <Box
-              sx={{
-                width: "320px",
-                height: "55px",
-                mt: "0.5rem",
-                border: checked.checkbox6
-                  ? "1px solid #01E994"
-                  : "1px solid #D0D5DD",
-                boxShadow: "none",
-                borderRadius: "30px",
-                display: "flex",
-                alignItems: "center",
-              }}
+              className={
+                checked.checkbox6
+                  ? classes.checkboxContainerChecked
+                  : classes.checkboxContainerUnChecked
+              }
             >
-              <Box
-                sx={{
-                  display: "flex",
-                  alignItems: "center",
-                  paddingLeft: "1rem",
-                }}
-              >
+              <Box className={classes.checkbox}>
                 <Checkbox
                   checked={checked.checkbox6}
                   onChange={handleChange("checkbox6")}
@@ -286,42 +161,15 @@ const Intentions = () => {
                     },
                   }}
                 />
-                <Typography
-                  sx={{
-                    fontWeight: "400",
-                    fontSize: "16px",
-                    color: "#323232",
-                    textAlign: "center",
-                  }}
-                >
+                <Typography className={classes.checkboxText}>
                   Barrierefreiheit im Alter
                 </Typography>
               </Box>
             </Box>
           </Box>
 
-          <Box
-            sx={{
-              mt: "1rem",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              backgroundColor: "#EFEFEF",
-              borderRadius: "30px",
-              padding: "6px 24px 6px 24px",
-              width: "197px",
-              height: "32px",
-              ml: "2.5rem",
-            }}
-          >
-            <Typography
-              sx={{
-                fontWeight: "400",
-                fontSize: "16px",
-                color: "#7C7C7C",
-                textAlign: "center",
-              }}
-            >
+          <Box className={classes.detailContainer}>
+            <Typography className={classes.detailText}>
               Details zur Intention
             </Typography>
           </Box>

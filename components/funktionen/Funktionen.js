@@ -20,8 +20,10 @@ import A10 from "@/public/assets/svgs/accessories/A10";
 import A11 from "@/public/assets/svgs/accessories/A11";
 import A12 from "@/public/assets/svgs/accessories/A12";
 import A13 from "@/public/assets/svgs/accessories/A13";
+import { funktionenStyles } from "@/styles/home-styles/funketionen/funketionen-styles";
 
 const Funktionen = () => {
+  const classes = funktionenStyles();
   const [checked, setChecked] = useState({
     checkbox1: false,
     checkbox2: false,
@@ -51,13 +53,7 @@ const Funktionen = () => {
         sx={{ mt: "4rem" }}
       >
         <Grid item xs={10}>
-          <Box
-            sx={{
-              position: "relative",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
+          <Box className={classes.imgContainer}>
             <Box sx={{ position: "absolute", top: 10, left: 100 }}>
               <A1 />
             </Box>

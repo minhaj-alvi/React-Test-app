@@ -13,6 +13,7 @@ import ContactIcon from "@/public/assets/svgs/navbar/contact-icon";
 import PhoneIcon from "@/public/assets/svgs/navbar/phone-icon";
 import ChatIcon from "@/public/assets/svgs/navbar/chat-icon";
 import CalendarIcon from "@/public/assets/svgs/navbar/calendar-icon";
+import { contactInfoStyles } from "@/styles/navbar/navbar-styles";
 
 const ContactInfoDropDown = () => {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -25,52 +26,19 @@ const ContactInfoDropDown = () => {
     setAnchorEl(null);
   };
 
+  const classes = contactInfoStyles();
+
   return (
     <Box>
       <Button
-        sx={{
-          backgroundColor: "white",
-          padding: "1rem",
-          borderRadius: "8px",
-          textTransform: "none",
-          fontSize: "16px",
-          color: "#323232",
-          "&:hover": {
-            backgroundColor: "white",
-            color: "#323232",
-          },
-          gap: "1rem",
-        }}
+        className={classes.contactBtnContainer}
         startIcon={<ContactIcon />}
         endIcon={<DownArrow />}
         onClick={handleClick}
       >
-        <Box
-          sx={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "flex-start",
-            alignItems: "flex-start",
-          }}
-        >
-          <Typography
-            sx={{
-              fontWeight: "400",
-              fontSize: "13px",
-              color: "#323232",
-            }}
-          >
-            Contact Us
-          </Typography>
-          <Typography
-            sx={{
-              fontWeight: "400",
-              fontSize: "14px",
-              color: "#475467",
-            }}
-          >
-            0800 9116 398
-          </Typography>
+        <Box className={classes.contactBtn}>
+          <Typography className={classes.contactUs}>Contact Us</Typography>
+          <Typography className={classes.number}>0800 9116 398</Typography>
         </Box>
       </Button>
       <Menu
@@ -87,34 +55,19 @@ const ContactInfoDropDown = () => {
         anchorEl={anchorEl}
         open={open}
         onClose={handleClose}
-        MenuListProps={{
-          "aria-labelledby": "basic-button",
-        }}
       >
         <MenuItem
           onClick={() => {
             handleClose();
           }}
         >
-          <Box sx={{ display: "flex", gap: "1rem", alignItems: "center" }}>
+          <Box className={classes.menuItemContainer}>
             <PhoneIcon />
             <Box>
-              <Typography
-                sx={{
-                  fontWeight: "500",
-                  fontSize: "16px",
-                  color: "#323232",
-                }}
-              >
+              <Typography className={classes.menuItemHeading}>
                 0123 456 789
               </Typography>
-              <Typography
-                sx={{
-                  fontWeight: "500",
-                  fontSize: "12px",
-                  color: "#7C7C7C",
-                }}
-              >
+              <Typography className={classes.menuItemSubHeading}>
                 Mo. - Fr. von 8:00 - 18:00 Uhr
               </Typography>
             </Box>
@@ -126,25 +79,13 @@ const ContactInfoDropDown = () => {
             handleClose();
           }}
         >
-          <Box sx={{ display: "flex", gap: "1rem", alignItems: "center" }}>
+          <Box className={classes.menuItemContainer}>
             <ChatIcon />
             <Box>
-              <Typography
-                sx={{
-                  fontWeight: "500",
-                  fontSize: "16px",
-                  color: "#323232",
-                }}
-              >
+              <Typography className={classes.menuItemHeading}>
                 Digitaler Chat-Assistent
               </Typography>
-              <Typography
-                sx={{
-                  fontWeight: "500",
-                  fontSize: "12px",
-                  color: "#7C7C7C",
-                }}
-              >
+              <Typography className={classes.menuItemSubHeading}>
                 24/7 für Sie verfügbar
               </Typography>
             </Box>
@@ -156,25 +97,13 @@ const ContactInfoDropDown = () => {
             handleClose();
           }}
         >
-          <Box sx={{ display: "flex", gap: "1rem", alignItems: "center" }}>
+          <Box className={classes.menuItemContainer}>
             <CalendarIcon />
             <Box>
-              <Typography
-                sx={{
-                  fontWeight: "500",
-                  fontSize: "16px",
-                  color: "#323232",
-                }}
-              >
+              <Typography className={classes.menuItemHeading}>
                 Expertenberatung
               </Typography>
-              <Typography
-                sx={{
-                  fontWeight: "500",
-                  fontSize: "12px",
-                  color: "#7C7C7C",
-                }}
-              >
+              <Typography className={classes.menuItemSubHeading}>
                 Persönliches Beratungsgespräch
               </Typography>
             </Box>
