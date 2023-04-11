@@ -4,7 +4,6 @@ import { Grid, Typography } from "@mui/material";
 
 import Image1 from "../../public/assets/pngs/Img1.png";
 import Image from "next/image";
-import { InstallationsortArray } from "@/utils/constants/constants";
 import SelectInstallationSort from "./select-installation-sort";
 
 const HomeConfiguration = () => {
@@ -16,10 +15,10 @@ const HomeConfiguration = () => {
         columns={{ xs: 2, sm: 8, md: 16, xl: 16 }}
         sx={{ mt: "7rem" }}
       >
-        <Grid item xs={11}>
+        <Grid item xs={11.8}>
           <Image src={Image1} alt="Image" width={"965px"} height={"543px"} />
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={3.5}>
           <Typography
             sx={{
               fontWeight: "700",
