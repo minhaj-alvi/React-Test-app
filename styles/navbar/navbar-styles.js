@@ -25,6 +25,7 @@ const navBarStyles = makeStyles({
     borderRadius: "8px",
     textTransform: "none",
     fontSize: "16px",
+    fontFamily: "Mulish",
     fontWeight: "500",
     color: "#323232",
     "&:hover": {
@@ -42,6 +43,7 @@ const contactInfoStyles = makeStyles({
     borderRadius: "8px",
     textTransform: "none",
     fontSize: "16px",
+    fontFamily: "Mulish",
     color: "#323232",
     "&:hover": {
       backgroundColor: "white",
@@ -61,12 +63,14 @@ const contactInfoStyles = makeStyles({
     fontWeight: "400",
     fontSize: "13px",
     color: "#323232",
+    fontFamily: "Mulish",
   },
 
   number: {
     fontWeight: "400",
     fontSize: "14px",
     color: "#475467",
+    fontFamily: "Mulish",
   },
 
   menuItemContainer: {
@@ -76,12 +80,14 @@ const contactInfoStyles = makeStyles({
   },
 
   menuItemHeading: {
+    fontFamily: "Mulish",
     fontWeight: "500",
     fontSize: "16px",
     color: "#323232",
   },
 
   menuItemSubHeading: {
+    fontFamily: "Mulish",
     fontWeight: "500",
     fontSize: "12px",
     color: "#7C7C7C",

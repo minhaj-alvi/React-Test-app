@@ -6,12 +6,14 @@ const homeConfigurationStyles = makeStyles({
     fontSize: "32px",
     color: "#323232",
     textAlign: "center",
+    fontFamily: "Mulish",
   },
 
   subheading: {
     fontWeight: "700",
     fontSize: "16px",
     color: "#323232",
+    fontFamily: "Mulish",
   },
 
   select: {
@@ -33,6 +35,7 @@ const homeConfigurationStyles = makeStyles({
     fontSize: "16px",
     color: "#323232",
     ml: "0.5rem",
+    fontFamily: "Mulish",
   },
 });
 

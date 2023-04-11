@@ -116,6 +116,7 @@ const Funktionen = () => {
                     fontWeight: "700",
                     fontSize: "14px",
                     color: "#323232",
+                    fontFamily: "Mulish",
                   }}
                 >
                   Ihre Ausstattung im Vergleich
@@ -127,6 +128,7 @@ const Funktionen = () => {
                     color: "#323232",
                     textDecoration: "underline",
                     cursor: "pointer",
+                    fontFamily: "Mulish",
                   }}
                 >
                   Mehr Info
@@ -147,6 +149,7 @@ const Funktionen = () => {
                     fontWeight: "700",
                     fontSize: "14px",
                     color: "#323232",
+                    fontFamily: "Mulish",
                   }}
                 >
                   Ihre Ersparnis
@@ -158,6 +161,7 @@ const Funktionen = () => {
                     color: "#323232",
                     textDecoration: "underline",
                     cursor: "pointer",
+                    fontFamily: "Mulish",
                   }}
                 >
                   Mehr Info
@@ -174,6 +178,7 @@ const Funktionen = () => {
               fontSize: "32px",
               color: "#323232",
               textAlign: "center",
+              fontFamily: "Mulish",
             }}
           >
             Funktionen
@@ -193,6 +198,7 @@ const Funktionen = () => {
               width: "197px",
               height: "32px",
               ml: "2.5rem",
+              fontFamily: "Mulish",
             }}
           >
             <Typography
@@ -201,6 +207,7 @@ const Funktionen = () => {
                 fontSize: "16px",
                 color: "#7C7C7C",
                 textAlign: "center",
+                fontFamily: "Mulish",
               }}
             >
               Funktionen vergleichen

@@ -47,6 +47,7 @@ const GenericCheckbox = ({ checked, handleChange }) => {
                 fontSize: "16px",
                 color: "#323232",
                 textAlign: "center",
+                fontFamily: "Mulish",
               }}
             >
               Heizung
@@ -58,6 +59,7 @@ const GenericCheckbox = ({ checked, handleChange }) => {
               fontSize: "16px",
               color: "#323232",
               textAlign: "center",
+              fontFamily: "Mulish",
             }}
           >
             inklusive
@@ -83,6 +85,7 @@ const GenericCheckbox = ({ checked, handleChange }) => {
             paddingLeft: "1rem",
             justifyContent: "space-between",
             width: "290px",
+            fontFamily: "Mulish",
           }}
         >
           <Box
@@ -106,6 +109,7 @@ const GenericCheckbox = ({ checked, handleChange }) => {
                 fontSize: "16px",
                 color: "#323232",
                 textAlign: "center",
+                fontFamily: "Mulish",
               }}
             >
               Beschattung
@@ -117,6 +121,7 @@ const GenericCheckbox = ({ checked, handleChange }) => {
               fontSize: "16px",
               color: "#323232",
               textAlign: "center",
+              fontFamily: "Mulish",
             }}
           >
             + 1.232,00€
@@ -165,6 +170,7 @@ const GenericCheckbox = ({ checked, handleChange }) => {
                 fontSize: "16px",
                 color: "#323232",
                 textAlign: "center",
+                fontFamily: "Mulish",
               }}
             >
               Beschattung
@@ -176,6 +182,7 @@ const GenericCheckbox = ({ checked, handleChange }) => {
               fontSize: "16px",
               color: "#323232",
               textAlign: "center",
+              fontFamily: "Mulish",
             }}
           >
             + 1.232,00€
@@ -224,6 +231,7 @@ const GenericCheckbox = ({ checked, handleChange }) => {
                 fontSize: "16px",
                 color: "#323232",
                 textAlign: "center",
+                fontFamily: "Mulish",
               }}
             >
               Beschattung
@@ -283,6 +291,7 @@ const GenericCheckbox = ({ checked, handleChange }) => {
                 fontSize: "16px",
                 color: "#323232",
                 textAlign: "center",
+                fontFamily: "Mulish",
               }}
             >
               Beschattung
@@ -294,6 +303,7 @@ const GenericCheckbox = ({ checked, handleChange }) => {
               fontSize: "16px",
               color: "#323232",
               textAlign: "center",
+              fontFamily: "Mulish",
             }}
           >
             + 1.232,00€
@@ -342,6 +352,7 @@ const GenericCheckbox = ({ checked, handleChange }) => {
                 fontSize: "16px",
                 color: "#323232",
                 textAlign: "center",
+                fontFamily: "Mulish",
               }}
             >
               Beschattung
@@ -353,6 +364,7 @@ const GenericCheckbox = ({ checked, handleChange }) => {
               fontSize: "16px",
               color: "#323232",
               textAlign: "center",
+              fontFamily: "Mulish",
             }}
           >
             + 1.232,00€
@@ -401,6 +413,7 @@ const GenericCheckbox = ({ checked, handleChange }) => {
                 fontSize: "16px",
                 color: "#323232",
                 textAlign: "center",
+                fontFamily: "Mulish",
               }}
             >
               Beschattung
@@ -412,6 +425,7 @@ const GenericCheckbox = ({ checked, handleChange }) => {
               fontSize: "16px",
               color: "#323232",
               textAlign: "center",
+              fontFamily: "Mulish",
             }}
           >
             + 1.232,00€
@@ -460,6 +474,7 @@ const GenericCheckbox = ({ checked, handleChange }) => {
                 fontSize: "16px",
                 color: "#323232",
                 textAlign: "center",
+                fontFamily: "Mulish",
               }}
             >
               Beschattung
@@ -471,6 +486,7 @@ const GenericCheckbox = ({ checked, handleChange }) => {
               fontSize: "16px",
               color: "#323232",
               textAlign: "center",
+              fontFamily: "Mulish",
             }}
           >
             + 1.232,00€

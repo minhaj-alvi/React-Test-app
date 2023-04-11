@@ -28,10 +28,11 @@ import HelpIcon from "@/public/assets/svgs/navbar/help-icon";
 // import NextArrow from "@/public/assets/svgs/image-slider/next-arrow";
 
 const settings = {
-  speed: 100,
+  dots: true,
+  speed: 500,
   slidesToScroll: 1,
   autoplay: true,
-  autoplaySpeed: 2000,
+  autoplaySpeed: 5000,
   //   prevArrow: <PrevArrow />,
   //   nextArrow: <NextArrow />,
 };
@@ -65,7 +66,7 @@ const Garantein = () => {
               </div>
             ))}
           </Slider>
-          <Box sx={{ display: "flex", gap: "1rem" }}>
+          <Box sx={{ display: "flex", gap: "1rem", mt: "2rem" }}>
             <Box
               sx={{
                 width: "400px",
@@ -81,6 +82,7 @@ const Garantein = () => {
                     fontWeight: "700",
                     fontSize: "10px",
                     color: "#323232",
+                    fontFamily: "Mulish",
                   }}
                 >
                   Ihre Ausstattung im Vergleich
@@ -103,6 +105,7 @@ const Garantein = () => {
                       fontWeight: "400",
                       fontSize: "10px",
                       color: "#323232",
+                      fontFamily: "Mulish",
                     }}
                   >
                     Effizienz
@@ -129,6 +132,7 @@ const Garantein = () => {
                         fontWeight: "400",
                         fontSize: "10px",
                         color: "#323232",
+                        fontFamily: "Mulish",
                       }}
                     >
                       2/10
@@ -149,6 +153,7 @@ const Garantein = () => {
                       fontWeight: "400",
                       fontSize: "10px",
                       color: "#323232",
+                      fontFamily: "Mulish",
                     }}
                   >
                     Sicherheit
@@ -176,6 +181,7 @@ const Garantein = () => {
                         fontWeight: "400",
                         fontSize: "10px",
                         color: "#323232",
+                        fontFamily: "Mulish",
                       }}
                     >
                       5/10
@@ -225,6 +231,7 @@ const Garantein = () => {
                         fontWeight: "400",
                         fontSize: "10px",
                         color: "#323232",
+                        fontFamily: "Mulish",
                       }}
                     >
                       10/10
@@ -245,6 +252,7 @@ const Garantein = () => {
                       fontWeight: "400",
                       fontSize: "10px",
                       color: "#323232",
+                      fontFamily: "Mulish",
                     }}
                   >
                     Wertsteigerung
@@ -272,6 +280,7 @@ const Garantein = () => {
                         fontWeight: "400",
                         fontSize: "10px",
                         color: "#323232",
+                        fontFamily: "Mulish",
                       }}
                     >
                       2/10
@@ -317,6 +326,7 @@ const Garantein = () => {
                       fontWeight: "400",
                       fontSize: "10px",
                       color: "#323232",
+                      fontFamily: "Mulish",
                     }}
                   >
                     Heizkosten
@@ -343,6 +353,7 @@ const Garantein = () => {
                         fontWeight: "400",
                         fontSize: "10px",
                         color: "#323232",
+                        fontFamily: "Mulish",
                       }}
                     >
                       2/10
@@ -390,6 +401,7 @@ const Garantein = () => {
                         fontWeight: "400",
                         fontSize: "10px",
                         color: "#323232",
+                        fontFamily: "Mulish",
                       }}
                     >
                       5/10
@@ -412,6 +424,7 @@ const Garantein = () => {
                       fontWeight: "400",
                       fontSize: "10px",
                       color: "#323232",
+                      fontFamily: "Mulish",
                     }}
                   >
                     Stromverbrauch
@@ -439,6 +452,7 @@ const Garantein = () => {
                         fontWeight: "400",
                         fontSize: "10px",
                         color: "#323232",
+                        fontFamily: "Mulish",
                       }}
                     >
                       10/10
@@ -456,6 +470,7 @@ const Garantein = () => {
               fontSize: "32px",
               color: "#323232",
               textAlign: "center",
+              fontFamily: "Mulish",
             }}
           >
             Garantein
@@ -468,6 +483,7 @@ const Garantein = () => {
                   fontWeight: "700",
                   fontSize: "18px",
                   color: "#323232",
+                  fontFamily: "Mulish",
                 }}
               >
                 Festpreisgarantie
@@ -477,6 +493,7 @@ const Garantein = () => {
                   fontWeight: "400",
                   fontSize: "16px",
                   color: "#7C7C7C",
+                  fontFamily: "Mulish",
                 }}
               >
                 Sie kennen alle Kosten von Anfang an. Keine versteckten Kosten.
@@ -490,6 +507,7 @@ const Garantein = () => {
                 sx={{
                   fontWeight: "700",
                   fontSize: "18px",
+                  fontFamily: "Mulish",
                   color: "#323232",
                 }}
               >
@@ -499,6 +517,7 @@ const Garantein = () => {
                 sx={{
                   fontWeight: "400",
                   fontSize: "16px",
+                  fontFamily: "Mulish",
                   color: "#7C7C7C",
                 }}
               >
@@ -514,6 +533,7 @@ const Garantein = () => {
                 sx={{
                   fontWeight: "700",
                   fontSize: "18px",
+                  fontFamily: "Mulish",
                   color: "#323232",
                 }}
               >
@@ -523,6 +543,7 @@ const Garantein = () => {
                 sx={{
                   fontWeight: "400",
                   fontSize: "16px",
+                  fontFamily: "Mulish",
                   color: "#7C7C7C",
                 }}
               >
@@ -550,6 +571,7 @@ const Garantein = () => {
                 fontWeight: "400",
                 fontSize: "16px",
                 color: "#7C7C7C",
+                fontFamily: "Mulish",
                 textAlign: "center",
               }}
             >
@@ -567,6 +589,7 @@ const Garantein = () => {
               borderRadius: "35px",
               color: "#ffffff",
               fontWeight: "700",
+              fontFamily: "Mulish",
               fontSize: "18px",
               "&:hover": {
                 backgroundColor: "#01E994",
@@ -585,6 +608,7 @@ const Garantein = () => {
               textTransform: "none",
               borderRadius: "35px",
               color: "#323232",
+              fontFamily: "Mulish",
               fontWeight: "700",
               fontSize: "18px",
               border: "1px solid #122C44",
@@ -601,6 +625,7 @@ const Garantein = () => {
               fontWeight: "700",
               fontSize: "16px",
               color: "#323232",
+              fontFamily: "Mulish",
               textDecoration: "underline",
               textAlign: "center",
             }}

@@ -6,12 +6,7 @@ const theme = createTheme({
       default: "#FFFFFF",
     },
     primary: {
-      black: "#1B152E",
-      main: "#1B152E",
-      contrastText: "#fff",
-    },
-    socialIcons: {
-      main: "#000000",
+      main: "#01E994",
     },
   },
   breakpoints: {

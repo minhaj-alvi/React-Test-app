@@ -6,12 +6,14 @@ const intentionStyles = makeStyles({
     fontSize: "32px",
     color: "#323232",
     textAlign: "center",
+    fontFamily: "Mulish",
   },
 
   subHeading: {
     fontWeight: "700",
     fontSize: "16px",
     color: "#323232",
+    fontFamily: "Mulish",
   },
 
   checkboxContainerChecked: {
@@ -43,6 +45,7 @@ const intentionStyles = makeStyles({
     fontSize: "16px",
     color: "#323232",
     textAlign: "center",
+    fontFamily: "Mulish",
   },
 
   detailContainer: {
@@ -63,6 +66,7 @@ const intentionStyles = makeStyles({
     fontSize: "16px",
     color: "#7C7C7C",
     textAlign: "center",
+    fontFamily: "Mulish",
   },
 });
 

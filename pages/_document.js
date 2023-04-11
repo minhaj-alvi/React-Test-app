@@ -2,6 +2,7 @@
 import { ServerStyleSheets } from "@material-ui/core";
 import Document, { Head, Html, Main, NextScript } from "next/document";
 import React from "react";
+import theme from "@/styles/theme";
 
 export default class MyDocument extends Document {
   render() {
@@ -9,6 +10,8 @@ export default class MyDocument extends Document {
       <Html lang="en">
         <Head>
           <title>React Test</title>
+          <meta name="theme-color" content={theme.palette.primary.main} />
+
           <link
             href="https://fonts.googleapis.com/css2?family=Mulish&display=swap"
             rel="stylesheet"

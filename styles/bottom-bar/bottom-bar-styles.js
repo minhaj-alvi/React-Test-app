@@ -22,12 +22,14 @@ const BottomBarStyles = makeStyles({
     fontWeight: "700",
     fontSize: "18px",
     color: "#122C44",
+    fontFamily: "Mulish",
   },
 
   text2: {
     fontWeight: "400",
     fontSize: "12px",
     color: "#AFAFAF",
+    fontFamily: "Mulish",
   },
 
   text3: {
@@ -35,12 +37,14 @@ const BottomBarStyles = makeStyles({
     fontSize: "24px",
     color: "#9EA7B7",
     textDecoration: "line-through",
+    fontFamily: "Mulish",
   },
 
   text4: {
     fontWeight: "700",
     fontSize: "24px",
     color: "#122C44",
+    fontFamily: "Mulish",
   },
 
   btnContainer: {
@@ -63,6 +67,7 @@ const BottomBarStyles = makeStyles({
     "&:hover": {
       backgroundColor: "white",
     },
+    fontFamily: "Mulish",
   },
 
   btn2: {
@@ -78,6 +83,7 @@ const BottomBarStyles = makeStyles({
     "&:hover": {
       backgroundColor: "#01E994",
     },
+    fontFamily: "Mulish",
   },
 });
 export default BottomBarStyles;
