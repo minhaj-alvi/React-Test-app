@@ -24,14 +24,6 @@ const theme = createTheme({
       xxl: 1920,
     },
   },
-  typography: {
-    topText: {
-      fontFamily: "roboto",
-      fontWeight: "700",
-      fontSize: "24px",
-      color: "#1B152E",
-    },
-  },
 });
 
 export default theme;
