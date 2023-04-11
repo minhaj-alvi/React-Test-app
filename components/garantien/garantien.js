@@ -628,6 +628,8 @@ const Garantein = () => {
               fontFamily: "Mulish",
               textDecoration: "underline",
               textAlign: "center",
+              cursor: "pointer",
+              textUnderlineOffset: "4px",
             }}
           >
             Need Help? Contact Us
