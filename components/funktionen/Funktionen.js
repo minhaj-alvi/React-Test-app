@@ -50,7 +50,7 @@ const Funktionen = () => {
         columns={{ xs: 2, sm: 8, md: 16, xl: 16 }}
         sx={{ mt: "4rem" }}
       >
-        <Grid item xs={11.8}>
+        <Grid item xs={10}>
           <Box
             sx={{
               position: "relative",
@@ -171,7 +171,7 @@ const Funktionen = () => {
             </Box>
           </Box>
         </Grid>
-        <Grid item xs={3.5}>
+        <Grid sx={{ ml: "8rem" }} item xs={4}>
           <Typography
             sx={{
               fontWeight: "700",

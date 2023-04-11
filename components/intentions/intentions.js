@@ -24,8 +24,8 @@ const Intentions = () => {
         columns={{ xs: 2, sm: 8, md: 16, xl: 16 }}
         sx={{ mt: "4rem" }}
       >
-        <Grid item xs={11.8}></Grid>
-        <Grid item xs={3.5}>
+        <Grid item xs={10}></Grid>
+        <Grid sx={{ ml: "8rem" }} item xs={4}>
           <Typography
             sx={{
               fontWeight: "700",

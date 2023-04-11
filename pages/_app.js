@@ -3,15 +3,16 @@ import PropTypes from "prop-types";
 
 import { StyledEngineProvider } from "@mui/material/styles";
 import { ThemeProvider } from "@mui/material/styles";
-
-import theme from "../styles/theme";
+import theme from "@/styles/theme";
 
 const MyApp = ({ Component, pageProps }) => {
   const getLayout = Component.getLayout || ((page) => page);
 
   return (
     <StyledEngineProvider injectFirst>
-      <ThemeProvider>{getLayout(<Component {...pageProps} />)}</ThemeProvider>
+      <ThemeProvider theme={theme}>
+        {getLayout(<Component {...pageProps} />)}
+      </ThemeProvider>
     </StyledEngineProvider>
   );
 };

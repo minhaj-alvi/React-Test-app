@@ -3,6 +3,7 @@ import React from "react";
 
 import { Box, GlobalStyles, styled } from "@mui/material";
 import Navbar from "@/components/navbar/navbar";
+import BottomBar from "@/components/bottom-bar/bottom-bar";
 
 const MainLayoutRoot = styled("div")(() => ({
   flex: "1 1 auto",
@@ -26,8 +27,6 @@ const MainLayout = ({ children }) => {
         }}
       />
 
-      <Navbar />
-
       <Box
         sx={{
           display: "flex",
@@ -38,7 +37,9 @@ const MainLayout = ({ children }) => {
           alignItems: "center",
         }}
       >
+        <Navbar />
         {children}
+        <BottomBar />
       </Box>
     </MainLayoutRoot>
   );
