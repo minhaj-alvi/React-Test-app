@@ -6,42 +6,18 @@ import Svg1 from "@/public/assets/svgs/circular-bar/Svg1";
 import Svg2 from "@/public/assets/svgs/circular-bar/svg2";
 import Svg3 from "@/public/assets/svgs/circular-bar/svg3";
 import Svg4 from "@/public/assets/svgs/circular-bar/svg4";
+import CircularProgressBarStyles from "@/styles/circular-progress/circular-progress-styles";
 
 const CircularProgressBarLeft = () => {
+  const classes = CircularProgressBarStyles();
   return (
     <>
-      <Box sx={{ display: "flex", gap: "1rem" }}>
+      <Box className={classes.mainContainer}>
         <Box>
-          <Box
-            sx={{
-              position: "relative",
-              display: "inline-flex",
-              alignItems: "center",
-              justifyContent: "center",
-              border: "1px solid #EFEFEF",
-              borderRadius: "50%",
-              mt: "1rem",
-            }}
-          >
-            <Box
-              sx={{
-                position: "absolute",
-                top: 20,
-                left: 35,
-                zIndex: 1,
-              }}
-            >
+          <Box className={classes.subContainer}>
+            <Box className={classes.svgContainer}>
               <Svg1 />
-              <Typography
-                sx={{
-                  fontWeight: "700",
-                  fontSize: "12px",
-                  color: "#323232",
-                  textAlign: "center",
-                }}
-              >
-                2/10
-              </Typography>
+              <Typography className={classes.text1}>2/10</Typography>
             </Box>
 
             <CircularProgress
@@ -52,48 +28,13 @@ const CircularProgressBarLeft = () => {
               sx={{ color: "#01E994" }}
             />
           </Box>{" "}
-          <Typography
-            sx={{
-              fontWeight: "400",
-              fontSize: "14px",
-              color: "#323232",
-              textAlign: "center",
-            }}
-          >
-            Effizienz
-          </Typography>
+          <Typography className={classes.text2}>Effizienz</Typography>
         </Box>
         <Box>
-          <Box
-            sx={{
-              position: "relative",
-              display: "inline-flex",
-              alignItems: "center",
-              justifyContent: "center",
-              border: "1px solid #EFEFEF",
-              borderRadius: "50%",
-              mt: "1rem",
-            }}
-          >
-            <Box
-              sx={{
-                position: "absolute",
-                top: 20,
-                left: 30,
-                zIndex: 1,
-              }}
-            >
+          <Box className={classes.subContainer}>
+            <Box className={classes.svgContainer}>
               <Svg2 />
-              <Typography
-                sx={{
-                  fontWeight: "700",
-                  fontSize: "12px",
-                  color: "#323232",
-                  textAlign: "center",
-                }}
-              >
-                10/10
-              </Typography>
+              <Typography className={classes.text1}>10/10</Typography>
             </Box>
 
             <CircularProgress
@@ -104,48 +45,13 @@ const CircularProgressBarLeft = () => {
               sx={{ color: "#01E994" }}
             />
           </Box>{" "}
-          <Typography
-            sx={{
-              fontWeight: "400",
-              fontSize: "14px",
-              color: "#323232",
-              textAlign: "center",
-            }}
-          >
-            Komfort
-          </Typography>
+          <Typography className={classes.text2}>Komfort</Typography>
         </Box>
         <Box>
-          <Box
-            sx={{
-              position: "relative",
-              display: "inline-flex",
-              alignItems: "center",
-              justifyContent: "center",
-              border: "1px solid #EFEFEF",
-              borderRadius: "50%",
-              mt: "1rem",
-            }}
-          >
-            <Box
-              sx={{
-                position: "absolute",
-                top: 20,
-                left: 30,
-                zIndex: 1,
-              }}
-            >
+          <Box className={classes.subContainer}>
+            <Box className={classes.svgContainer}>
               <Svg3 />
-              <Typography
-                sx={{
-                  fontWeight: "700",
-                  fontSize: "12px",
-                  color: "#323232",
-                  textAlign: "center",
-                }}
-              >
-                5/10
-              </Typography>
+              <Typography className={classes.text1}>5/10</Typography>
             </Box>
 
             <CircularProgress
@@ -156,49 +62,14 @@ const CircularProgressBarLeft = () => {
               sx={{ color: "#01E994" }}
             />
           </Box>{" "}
-          <Typography
-            sx={{
-              fontWeight: "400",
-              fontSize: "14px",
-              color: "#323232",
-              textAlign: "center",
-            }}
-          >
-            Sicherheit
-          </Typography>
+          <Typography className={classes.text2}>Sicherheit</Typography>
         </Box>
 
         <Box>
-          <Box
-            sx={{
-              position: "relative",
-              display: "inline-flex",
-              alignItems: "center",
-              justifyContent: "center",
-              border: "1px solid #EFEFEF",
-              borderRadius: "50%",
-              mt: "1rem",
-            }}
-          >
-            <Box
-              sx={{
-                position: "absolute",
-                top: 20,
-                left: 30,
-                zIndex: 1,
-              }}
-            >
+          <Box className={classes.subContainer}>
+            <Box className={classes.svgContainer}>
               <Svg4 />
-              <Typography
-                sx={{
-                  fontWeight: "700",
-                  fontSize: "12px",
-                  color: "#323232",
-                  textAlign: "center",
-                }}
-              >
-                2/10
-              </Typography>
+              <Typography className={classes.text1}>2/10</Typography>
             </Box>
 
             <CircularProgress
@@ -209,16 +80,7 @@ const CircularProgressBarLeft = () => {
               sx={{ color: "#01E994" }}
             />
           </Box>
-          <Typography
-            sx={{
-              fontWeight: "400",
-              fontSize: "14px",
-              color: "#323232",
-              textAlign: "center",
-            }}
-          >
-            Sicherheit
-          </Typography>
+          <Typography className={classes.text2}>Sicherheit</Typography>
         </Box>
       </Box>
     </>

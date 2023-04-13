@@ -5,52 +5,20 @@ import { Box, CircularProgress, Grid, Typography } from "@mui/material";
 import Svg5 from "@/public/assets/svgs/circular-bar/svg5";
 import Svg6 from "@/public/assets/svgs/circular-bar/svg6";
 import Svg7 from "@/public/assets/svgs/circular-bar/svg7";
+import CircularProgressBarStyles from "@/styles/circular-progress/circular-progress-styles";
 
 const CircularProgressBarRight = () => {
+  const classes = CircularProgressBarStyles();
+
   return (
     <>
-      <Box sx={{ display: "flex", gap: "1rem" }}>
+      <Box className={classes.mainContainer}>
         <Box>
-          <Box
-            sx={{
-              position: "relative",
-              display: "inline-flex",
-              alignItems: "center",
-              justifyContent: "center",
-              border: "1px solid #EFEFEF",
-              borderRadius: "50%",
-              mt: "1rem",
-            }}
-          >
-            <Box
-              sx={{
-                position: "absolute",
-                top: 15,
-                left: 26,
-                zIndex: 1,
-              }}
-            >
+          <Box className={classes.subContainer}>
+            <Box className={classes.svgsContainer}>
               <Svg5 />
-              <Typography
-                sx={{
-                  fontWeight: "700",
-                  fontSize: "12px",
-                  color: "#323232",
-                  textAlign: "center",
-                }}
-              >
-                -35%
-              </Typography>
-              <Typography
-                sx={{
-                  fontWeight: "700",
-                  fontSize: "10px",
-                  color: "#AFAFAF",
-                  textAlign: "center",
-                }}
-              >
-                bis zu
-              </Typography>
+              <Typography className={classes.text1}>-35%</Typography>
+              <Typography className={classes.text3}>bis zu</Typography>
             </Box>
 
             <CircularProgress
@@ -61,58 +29,14 @@ const CircularProgressBarRight = () => {
               sx={{ color: "#01E994" }}
             />
           </Box>{" "}
-          <Typography
-            sx={{
-              fontWeight: "400",
-              fontSize: "14px",
-              color: "#323232",
-              textAlign: "center",
-            }}
-          >
-            Heizkosten
-          </Typography>
+          <Typography className={classes.text2}>Heizkosten</Typography>
         </Box>
         <Box>
-          <Box
-            sx={{
-              position: "relative",
-              display: "inline-flex",
-              alignItems: "center",
-              justifyContent: "center",
-              border: "1px solid #EFEFEF",
-              borderRadius: "50%",
-              mt: "1rem",
-            }}
-          >
-            <Box
-              sx={{
-                position: "absolute",
-                top: 15,
-                left: 25,
-                zIndex: 1,
-              }}
-            >
+          <Box className={classes.subContainer}>
+            <Box className={classes.svgsContainer}>
               <Svg6 />
-              <Typography
-                sx={{
-                  fontWeight: "700",
-                  fontSize: "12px",
-                  color: "#323232",
-                  textAlign: "center",
-                }}
-              >
-                -50%
-              </Typography>
-              <Typography
-                sx={{
-                  fontWeight: "700",
-                  fontSize: "10px",
-                  color: "#AFAFAF",
-                  textAlign: "center",
-                }}
-              >
-                bis zu
-              </Typography>
+              <Typography className={classes.text1}>-50%</Typography>
+              <Typography className={classes.text3}>bis zu</Typography>
             </Box>
 
             <CircularProgress
@@ -123,58 +47,14 @@ const CircularProgressBarRight = () => {
               sx={{ color: "#01E994" }}
             />
           </Box>{" "}
-          <Typography
-            sx={{
-              fontWeight: "400",
-              fontSize: "14px",
-              color: "#323232",
-              textAlign: "center",
-            }}
-          >
-            Stromkosten
-          </Typography>
+          <Typography className={classes.text2}>Stromkosten</Typography>
         </Box>
         <Box>
-          <Box
-            sx={{
-              position: "relative",
-              display: "inline-flex",
-              alignItems: "center",
-              justifyContent: "center",
-              border: "1px solid #EFEFEF",
-              borderRadius: "50%",
-              mt: "1rem",
-            }}
-          >
-            <Box
-              sx={{
-                position: "absolute",
-                top: 15,
-                left: 30,
-                zIndex: 1,
-              }}
-            >
+          <Box className={classes.subContainer}>
+            <Box className={classes.svgsContainer}>
               <Svg7 />
-              <Typography
-                sx={{
-                  fontWeight: "700",
-                  fontSize: "12px",
-                  color: "#323232",
-                  textAlign: "center",
-                }}
-              >
-                -40%
-              </Typography>
-              <Typography
-                sx={{
-                  fontWeight: "700",
-                  fontSize: "10px",
-                  color: "#AFAFAF",
-                  textAlign: "center",
-                }}
-              >
-                bis zu
-              </Typography>
+              <Typography className={classes.text1}>-40%</Typography>
+              <Typography className={classes.text3}>bis zu</Typography>
             </Box>
 
             <CircularProgress
@@ -185,16 +65,7 @@ const CircularProgressBarRight = () => {
               sx={{ color: "#01E994" }}
             />
           </Box>{" "}
-          <Typography
-            sx={{
-              fontWeight: "400",
-              fontSize: "14px",
-              color: "#323232",
-              textAlign: "center",
-            }}
-          >
-            CO Emmisionen
-          </Typography>
+          <Typography className={classes.text2}>CO Emmisionen</Typography>
         </Box>
       </Box>
     </>
